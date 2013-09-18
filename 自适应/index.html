@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+    <style>
+        body, ul, ol, li, div {
+            padding:0px;
+            margin:0px;
+        }
+        li {
+            list-style:none;
+        }
+        .header {
+            background-color: #bbd8e9;
+            margin: 20px;
+            height: 40px;
+        }
+
+        .nav {
+            background-color: #bbd8e9;
+            margin: 20px;
+            height: 40px;
+        }
+
+        .footer {
+            background-color: #bbd8e9;
+            margin: 20px;
+            height: 40px;
+        }
+
+        .main .span2 {
+            background-color: #bbd8e9;
+            height: 300px;
+        }
+
+        .main .span10 {
+            background-color: #bbd8e9;
+            height: 300px;
+        }
+
+
+
+         /* 横向放置的手机及分辨率更小的设备 */
+        @media (max-width: 480px){
+            .header {
+                margin: 0;
+                margin-bottom: 2px;
+            }
+
+            .nav {
+                display: block;
+                text-align: center;
+                margin: 0;
+                height: 100px;
+                margin-bottom: 2px;
+            }
+
+                .nav ul {
+                    display: block;
+                    margin: 0;
+                    width: 100%;
+                }
+
+                    .nav ul.inline > li {
+                        width: 100%;
+                        background-color: green;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+            .main {
+                padding: 0px;
+                margin-bottom: 2px;
+            }
+            
+            .main .row-fluid section {
+                    width: 100%;
+                     margin-bottom: 2px;
+                }
+
+            .main .row-fluid aside {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .footer {
+                margin: 0;
+                padding: 0px;
+            }
+        
+        
+        
+        
+        
+        }
+    </style>
+<body>
+    <div class="header container-fluid">header</div>
+    <div class="nav">
+        <ul class="inline">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="main container-fluid">
+        <div class="row-fluid">
+            <section class="span10">
+                section
+            </section>
+            <aside class="span2">
+                aside
+            </aside>
+        </div>
+    </div>
+    <footer class="footer container-fluid">footer</footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
